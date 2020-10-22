@@ -16,6 +16,7 @@
 		935B6015254217F900FE7A5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935B6013254217F900FE7A5E /* Main.storyboard */; };
 		935B6017254217FB00FE7A5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935B6016254217FB00FE7A5E /* Assets.xcassets */; };
 		935B601A254217FB00FE7A5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935B6018254217FB00FE7A5E /* LaunchScreen.storyboard */; };
+		935B6023254219CE00FE7A5E /* DGSelectionPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B6022254219CE00FE7A5E /* DGSelectionPro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		935B6016254217FB00FE7A5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		935B6019254217FB00FE7A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		935B601B254217FB00FE7A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935B6022254219CE00FE7A5E /* DGSelectionPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSelectionPro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				935B5FEE2542160500FE7A5E /* DGSelectionPro.h */,
 				935B5FEF2542160500FE7A5E /* Info.plist */,
+				935B6022254219CE00FE7A5E /* DGSelectionPro.swift */,
 			);
 			path = DGSelectionPro;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					935B5FEA2542160500FE7A5E = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					935B5FF32542160600FE7A5E = {
 						CreatedOnToolsVersion = 12.0;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935B6023254219CE00FE7A5E /* DGSelectionPro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		935B60002542160600FE7A5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.DGServices.DGSelectionPro;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		935B60012542160600FE7A5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -484,6 +492,7 @@
 		935B60032542160600FE7A5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DGSelectionProTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,6 +510,7 @@
 		935B60042542160600FE7A5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DGSelectionProTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
