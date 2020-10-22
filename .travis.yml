@@ -6,4 +6,4 @@ env:
     - TEST_SDK=iphonesimulator14.0 OS=10.5.6 NAME='iPhone 8'
 
 script:
-  - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project SwiftyLib.xcodeproj -scheme SwiftyLib -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
+  - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project DGSelectionPro.xcodeproj -scheme DGSelectionPro -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
